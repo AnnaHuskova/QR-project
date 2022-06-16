@@ -8,7 +8,7 @@ body {
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none; 
+     
 }
 
 .img {
@@ -100,7 +100,7 @@ a {
 /* Hamburger menu */
 
 .hamburger-tgl {
-    display: inline-block;
+    display: block;
     cursor: pointer;
     position: relative;
     z-index: 55;
@@ -114,16 +114,14 @@ a {
     align-items: center;
 }
 
-.hamburger-tgl span {
-    display: inline-block;
-    position: relative;
+.bar {
+    display: block;
+    width: 42px;
     height: 3px;
-    width: 54px;
-    border-radius: 1px;
-    vertical-align: middle;
-
+    margin: 6px auto;
+    color: #fff;
+    
 }
-
 
 
 /* Menu_nav list */
