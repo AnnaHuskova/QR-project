@@ -40,6 +40,10 @@ a {
        
     }
 
+    .logo_head {
+        margin-right: 36px;
+    }
+
  }
 
  /*@media Tablet */
@@ -140,9 +144,12 @@ a {
     text-decoration: underline;
 }
 
-.menu-nav {
+.menu-nav__body {
     margin: 108px;
+    overflow: auto;
 }
+
+
 
 .nav__list {
     position: fixed;

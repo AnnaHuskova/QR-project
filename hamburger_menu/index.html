@@ -5,35 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger_menu</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__body">
-                <div class="header__logo">
-                    <div class="logo_text">
-                        <a href="" class="text_specifications">QR mandrivky</a>
-                    </div>
-                      
-                    <a href=""><img class="logo_tree" src="img/Logo/Logo Parks.png" alt="Logo"></a>
-                </div>
+        <div class="header__container _container">
 
-                <nav class="navbar">
-                    <li>
-                        <a href="#" class="nav__link">Головна</a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav__link">Локації</a>
-                    </li>
-                    
-                </nav>
-                
+            <ul class="navbar" id="navbar">
+                <li>
+                    <a href="#" class="nav__item">Головна</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__item">Локації</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <div class="hamb_field" id="hamb">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
 
+            <div class="header__logo">
+                <div class="logo_text">
+                    <a href="#" class="text_specifications">QR mandrivky</a>
+                </div>
+                  
+                <a href="#"><img class="logo_tree" src="img/Logo/Logo Parks.png" alt="Logo"></a>
+            </div>
+
+    
         </div>
 
     </header>
 
+    <div class="dropdown__menu">
+        <ul class="menu_locations" id="dropdown">
+            <li class="link__location"><a href="#" class="nav_link">Колонада та огорожа парку</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Потьомкінський палац (Палац культури студентів ДНУ)</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Підземні ходи від палацу Потьомкіна</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Потьомкінський сад</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Пам’ятник «Скорботна»</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Колишній Зелений театр (1935-1943)</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Старі головні сходи 1950-х років</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Альтанка 1930-х років. Підмурок</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Місце оранжерей князя Потьомкіна</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Катеринославський яхт-клуб</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Перший пам’ятник Т.Г. Шевченку 1949 р</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Місце стоянки первісної людини</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Зимівник козака Лазаря Глоби</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Ресторан «Маяк» (колишній)</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Пам’ятник-бюст В.П. Каруни</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Пам’ятники тваринам</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Відомі постаті</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Скелі парку</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Оглядовий майданчик</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Міський лекторій</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Модель прольоту Мерефо-Херсонського залізничного мосту</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Місце дачі Богомолових</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Фонтан «Поріг Ревучий»</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Пам’ятний знак на честь Святого Апостола Андрія Первозванного</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Пам’ятний знак у пам'ять про Візантійський монастир</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Церква Святого Миколая</a></li>
+            <li class="link__location"><a href="#" class="nav_link">«Місце сили». Езотеричний біоенергетичний об’єкт</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Пам’ятник Т.Г. Шевченку</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Мерефо-Херсонський залізничний міст</a></li>
+            <li class="link__location"><a href="#" class="nav_link">Акваріум</a></li>
+        </ul>
+    </div>
+<script src="main.js"></script>
     
 </body>
 </html>
