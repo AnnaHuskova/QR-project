@@ -1,35 +1,23 @@
-"use strict"
+const hamburger = document.querySelector(".hamburger");
+const menuLocations = document.querySelector(".menu_locations");
+const navbarLocations = document.querySelector(".nav__item_2");
 
-const isMobile = {
-    Android: function () {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function () {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function () {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function () {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function () {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function () {
-        return (
-            isMobile.Android() ||
-            isMobile.BlackBerry() ||
-            isMobile.iOS() ||
-            isMobile.Opera() ||
-            isMobile.Windows()
-        );
-    }
-};
+// --------Hamburger---------
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    menuLocations.classList.toggle("active");
 
-if (isMobile.any()) {
-    document.body.classList.add('_touch');
-} else {
-    document.body.classList.add('_pc');
-}
+})
+
+// ---------NavBar------------
+
+navbarLocations.addEventListener("click", () => {
+    navbarLocations.classList.toggle("active");
+    menuLocations.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    menuLocations.classList.remove("active");
+}))
 
