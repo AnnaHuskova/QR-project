@@ -43,7 +43,7 @@ footer {
 /* ------------HEADER------------- */
 
 .header {
-    background: #315855;
+    background: rgb(49, 88, 85);
     position: fixed;
     left: 0;
     top: 0;
@@ -108,7 +108,7 @@ footer {
     align-items: stretch;
     list-style: none;
     gap: 60px;
-    padding: 0 21px;
+    padding: 0 0px;
     
 }
 
@@ -159,18 +159,47 @@ footer {
     color: rgba(255, 255, 255, 1);
     
 }
+
+
 /* ______________HERO_____________ */
 
-.hero-inner-items {
+.hero-card {
     position: relative;
-    width: auto;
     height: 500px;
+    width: 100%;
     margin-top: 120px;
-    background: url(img/loc_1_page/cover.jpg) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.041)), url(img/loc_1_page/cover.jpg) no-repeat center;
     background-size: cover;
+    background-position: center center;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.hero-card .hero-inner-items {
+    margin-top: 100px;
+    text-align: center;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.hero-card:hover .hero-inner-items:hover {
+    transform: translateY(0px);
+    opacity: 1;
 
 }
+
+.hero-inner-items h1{
+    color:rgba(255, 255, 255, 1);
+
+
+}
+
+
 
 /* __________FOOTER_________ */
 
@@ -178,6 +207,7 @@ footer {
     height: auto;
     background: #315855;
     display: flex;
+    align-content: center;
     
 }
 
