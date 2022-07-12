@@ -200,6 +200,7 @@ footer {
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
     border: 3px solid white;
     backdrop-filter: blur(3px);
+    transform: translateZ(30px) scaleY(1);
     transform-origin: top;
     z-index: 15;
     
@@ -225,8 +226,8 @@ footer {
     backdrop-filter: blur(3px); 
     position: absolute;
     left: 15%;
-    bottom: -3%;
-    transform: translateZ(20px) scaleY(0);
+    bottom: -20%;
+    transform: translateZ(20px) scaleY(1);
     transform-origin: top;
     transition: 0.5s;
     z-index: 15;
