@@ -131,7 +131,8 @@ footer {
     left: -100%;
     top: 108px;
     width: 100%;
-    background: #315855;
+    background: rgba(49, 88, 85, 0.9);
+    backdrop-filter: blur(7px);
     flex-direction: column;
     text-align: center;
     padding: 3.5rem 0;
@@ -162,12 +163,21 @@ footer {
 
 
 /* ______________HERO_____________ */
+.hero {
+    position: relative;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
 
+
+}
 .hero-card {
     position: relative;
     height: 500px;
     width: 100%;
-    margin-top: 120px;
     background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.041)), url(img/loc_1_page/cover.jpg) no-repeat center;
     background-size: cover;
     background-position: center center;
@@ -179,33 +189,72 @@ footer {
     z-index: 10;
 }
 
-.hero-card .hero-inner-items {
-    margin-top: 100px;
+.hero-inner-items {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    transform: translateY(200px);
-    opacity: 0;
-    transition: 0.7s;
-}
-
-.hero-card:hover .hero-inner-items:hover {
-    transform: translateY(0px);
-    opacity: 1;
-
+    align-items: center;
+    top: 20%;
+    justify-content: center;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border: 3px solid white;
+    backdrop-filter: blur(3px);
+    transform-origin: top;
+    z-index: 15;
+    
 }
 
 .hero-inner-items h1{
     color:rgba(255, 255, 255, 1);
-
-
+    padding: 7px 12px 7px 12px;
+    
 }
+   
+
+.card-short-description  {
+    display: flex;
+    right: 20%;
+    text-align: center;
+    width: 70%;
+    margin: 60px 0;
+    background: rgba(49, 88, 85, 0.7);
+    border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    transform: translateY(120px);
+    backdrop-filter: blur(3px); 
+    position: absolute;
+    left: 15%;
+    bottom: -3%;
+    transform: translateZ(20px) scaleY(0);
+    transform-origin: top;
+    transition: 0.5s;
+    z-index: 15;
+}
+
+.hero:hover .card-short-description  {
+    transform: translateZ(50px) scaleY(1);
+}
+
+.card-short-description p{
+    color: #fff;
+    font-size: 21px;
+}
+
+
 
 
 
 /* __________FOOTER_________ */
 
-.footer-content {
+.footer {
     height: auto;
     background: #315855;
+    
+}
+
+.footer-content {
+    height: auto;
     display: flex;
     align-content: center;
     
@@ -261,14 +310,14 @@ footer {
         display: flex;
         left: -100%;
         width: 100%;
-        background: #315855;
+        background: rgba(49, 88, 85, 0.8);
+        backdrop-filter: blur(9px);
         flex-direction: column;
         text-align: center;
         padding: 3.5rem 0;
         transition: 0,3s;
         border-radius: 0 0 1.5rem 1.5rem;
         z-index: 60;
-        
     }
 
     .menu_locations.active {

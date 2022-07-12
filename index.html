@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger_menu</title>
+    <title>QR excurtion</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,19 +42,25 @@
     </header>
 
     <main class="main">
-        <div class="hero-card _container">
+        <div class="hero _container">
+            <div class="hero-card"></div>
             <div class="hero-inner-items">
                 <h1><span class="location_point">Локація</span></h1>
-                <h1><span class="location_name">Колонада та огорожа парку</span></h1>
-
+                <h1><span class="location_name">"Колонада та огорожа парку"</span></h1>
+            </div>
+            <div class="card-short-description">
+                <p class="short-description">«Колонада входу до парку імені Т.Г. Шевченка. Архітектор Л.Р. Ветвицький. 1949 р. Збудована в стилі неокласицизму. 
+                    Огорожа парку імені Т.Г. Шевченка. 1949 р. Архітектор А.П. Меркулов. Збудована за зразком огорожі Казанського собору початку XIX ст. у м. Санкт-Петербург». 
+                </p>
             </div>
         </div>
+       
 
 
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
+        <div class="footer-content  _container">
             <a href="#"></a>
             <h1><span class="department_name">Департамент парків та рекреаії</span></h1>
             <h1>Контакти</h1>
@@ -102,7 +108,7 @@
     <script src="main.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
-        VanillaTilt.init(document.querySelector(".hero-card"), {
+        VanillaTilt.init(document.querySelector(".hero "), {
 		max: 15,
 		speed: 200,
         glare: true,
