@@ -184,6 +184,7 @@ footer {
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
     overflow: hidden;
     display: flex;
+    transform-style: preserve-3d;
     justify-content: center;
     align-items: center;
     z-index: 10;
@@ -202,6 +203,7 @@ footer {
     backdrop-filter: blur(3px);
     transform: translateZ(30px) scaleY(1);
     transform-origin: top;
+    transform-style: preserve-3d;
     transition: 0.5s;
     z-index: 15;
     
@@ -230,12 +232,13 @@ footer {
     bottom: -20%;
     transform: translateZ(30px) scaleY(1);
     transform-origin: top;
+    transform-style: preserve-3d;
     transition: 0.5s;
     z-index: 15;
 }
 
 .hero:hover .card-short-description .hero-inner-items  {
-    transform: translateZ(50px) scaleY(0);
+    transform: translateZ(50px) scaleY(1);
 }
 
 .card-short-description p{
@@ -243,15 +246,76 @@ footer {
     font-size: 21px;
 }
 
+/* ______________PROGRESS-BOARD____________ */
+
+.progress-board {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    max-width: 1200px;
+    margin-top: 108px;
+    background:rgb(160, 180, 179);
+    z-index: 5;
+}
+
+.progress-bar {
+    position: relative;
+    width: 340px;
+    height: 520px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.progress-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    background: rgb(49, 88, 85);
+    border: 1px solid red;
+ 
 
 
+}
+
+.circle-inner {
+    margin-left: 10%;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.circle-bar h3 {
+    color: #fff;
+}
 
 
 /* __________FOOTER_________ */
 
 .footer {
+    position: relative;
     height: auto;
-    background: #315855;
+    margin-top: 30px;
+    background: rgba(49, 88, 85, 0.7);
     
 }
 
