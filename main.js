@@ -21,3 +21,29 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
     menuLocations.classList.remove("active");
 }))
 
+// ---------ProgressBar-----------
+
+const circleBar = document.querySelectorAll('.circle-bar');
+window.addEventListener('load', function(){
+    circleBar.forEach(item => {
+        let numElement = item.querySelector('.num');
+        let num = parseInt(numElement.innerText);
+        let count = 0;
+        let time = 2000 / num;
+
+        this.setInterval(() => {
+            if(count == num){
+            } else {
+                count += 1;
+            numElement.innerText = count;
+
+            }
+        
+        }, 20)
+
+        let circle = item.querySelector('.circle');
+        circle.style.strokeDashoffset = 964 - ( 964 * ( num / 100));
+
+    })
+
+});
