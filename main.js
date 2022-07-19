@@ -29,7 +29,9 @@ window.addEventListener('load', function(){
         let numElement = item.querySelector('.num');
         let num = parseInt(numElement.innerText);
         let count = 0;
+        let circle = item.querySelector('.circle');
         let time = 2000 / num;
+    
 
         this.setInterval(() => {
             if(count == num){
@@ -39,10 +41,21 @@ window.addEventListener('load', function(){
 
             }
         
-        }, 20)
+        }, time)
 
-        let circle = item.querySelector('.circle');
         circle.style.strokeDashoffset = 964 - ( 964 * ( num / 100));
+
+        let dot = item.querySelector('.dot_progress');
+        dot.style.transform = 
+                   `rotate(${360 * (num / 100)}deg)`;
+         if(num == 100){
+         dot.style.opacity = 0;
+         }
+
+        // let dot = item.querySelector('.dot_progress');
+        // dot.style.transform = `rotate(${360 ( num / 100 )}deg)`;
+
+        
 
     })
 
