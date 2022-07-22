@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR excurtion</title>
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,7 +80,7 @@
                 <div class="circle-bar">
                     <div class="circle-inner">
                        <p class="number">
-                        <span class="num">34</span><span class="percent">%</span>
+                        <span class="num">1</span><span class="percent">%</span>
                         <span class="loc_name">Локація</span>
                         <span class="loc">1/13</span>
                        </p>
@@ -89,7 +90,7 @@
                         <circle class="circle _2" cx="170" cy="170" r="154" stroke-linecap="round" />
                     </svg>
                 </div>
-                <h1>Маршрут 1</h1>
+                <h1>Маршрут 2</h1> 
             </div>
             <div class="progress-bar">
                 <div class="circle-bar">
@@ -105,7 +106,7 @@
                         <circle class="circle _3" cx="170" cy="170" r="154" stroke-linecap="round" />
                     </svg>
                 </div>
-                <h1>Маршрут 1</h1>
+                <h1>Маршрут 3</h1>
             </div>
 
         </div>
@@ -123,20 +124,22 @@
         </div>
        
         <div class="slider _container">
-            <div class="slides">
-                <div class="photo">
-                    <img src="img/loc_1_page/cover.jpg" alt="#">
+            <div class="btnLeft fa-solid fa-angle-left"></div>
+            <div class="btnRight fa-solid fa-angle-right"></div>
+            <div class="carusel">
+                <div class="slide">
+                    <img src="img/loc_1_page/01.jpg" alt="#">
                 </div>
-                <div class="photo">
-                    <img src="img/loc_1_page/02.tif" alt="#">
+                <div class="slide">
+                    <img src="img/loc_1_page/02.jpg" alt="#">
                 </div>
-                <div class="photo">
+                <div class="slide">
                     <img src="img/loc_1_page/03.JPG" alt="#">
                 </div>
-
             </div>
-            <div class="btn-left"></div>
-            <div class="btn-right">
+
+            
+            
             </div>
         </div>
 
@@ -155,6 +158,9 @@
     </footer>
 
     <div class="dropdown__menu">
+
+
+
         <ul class="menu_locations">
             <li class="link__location"><a href="#" class="nav_link">Колонада та огорожа парку</a></li>
             <li class="link__location"><a href="#" class="nav_link">Потьомкінський палац (Палац культури студентів ДНУ)</a></li>
@@ -189,7 +195,12 @@
         </ul>
     </div>
 
+    
+
+    <!-- __________Main_JS___________ -->
     <script src="main.js"></script>
+    
+    <!-- _____________Vanilla_JS_____________ -->
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
         VanillaTilt.init(document.querySelector(".hero "), {
@@ -199,7 +210,6 @@
         "max-glare": 0.3,
 	});
     </script>
-    
 
 
 
