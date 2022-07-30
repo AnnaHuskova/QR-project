@@ -405,44 +405,84 @@ footer {
     font-weight: bold;
 }
 
-.loc-text .description-text {
+.description-text {
     font-size: 21px;
     padding-top: 21px;
     text-align: center;
 }
+
+
 /* ___________SLIDER____________ */
 
 .slider {
     height: 500px;
+    width: 1200px;
     background-color: #325954;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
-    margin: auto;
-}
+    margin-top: 21px;
+
+} 
 
 .slides {
-    width: 1200px;
     display: flex;
+    width: 3600px;
 }
 
 .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 500px;
-    width: auto;
+    width: 1200px;
+    transition: 0.7s;
 }
 
-.btn-left .btn-right {
+
+.btnLeft, .btnRight {
     position: absolute;
     width: 70px;
     height: 500px;
-    top: o;
+    align-items: center;
+    line-height: 500px !important;
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: 0.3s;
 
 }
 
-.btnLeft .btnRight {
-    position: relative;
+.btnLeft:hover, .btnRight:hover {
+    background: rgba(19, 34, 33, 0.7);
+
+}
+
+
+.btnLeft {
+    left: 0;
+}
+
+.btnRight {
+    right: 0;
+}
+
+.fa-angle-left, .fa-angle-right {
+    color: #fff;
+
+}
+
+.image {
+    border-radius: 21px;
+    max-height: 90%;
+    max-width: auto;
+    
+}
+
+.slide p {
+    color: #fff;
+    margin: 9px 0;
+    font-size: 21px;
 }
 
 

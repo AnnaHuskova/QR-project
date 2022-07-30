@@ -111,40 +111,51 @@
 
         </div>
 
+        <!-- ____________Location_Description_________ -->
+
         <div class="location-desription _container">
-            <div class="descript-title"> <h1>Опис локації</h1></div>
+            <div class="descript-title"> <h1>Історичний опис локації</h1></div>
             <p class="loc-text">
-                <span class="title">Колонада входу та огорожа парку.</span>
+                <span class="title">"Колонада входу та огорожа парку"</span>
                 <span class="description-text"> 
                     В кінці 1940-х рр. парк отримав нове обрамлення з боку площі Шевченка. Площа парку була суттєво збільшена за рахунок приблизно половини площі Шевченка. З'явився парадний вхід-колонада в парк, яку спроектував архітектор Л.Р. Ветвицький. Колонада парку Т.Г. Шевченко - прекрасно збережений зразок архітектурного стилю, що отримав назву «сталінський ампір». Колонада коринфського ордера має напівкруглу форму. 
                     Одночасно з колонадою-входом в парк по обидві її сторони на кордоні з площею Шевченка була зведена масивна огорожа з чавунною решіткою. Проект огорожі розробив архітектор А.П. Меркулов. Зразком для неї стала огорожа Казанського собору в Санкт-Петербурзі - пам'ятник мистецтва початку XIX ст.
                     Побудовані на рубежі 1940-х-1950-х рр. в неокласичному стилі нова огорожа і колонада головного входу остаточно ізолювали Потьомкінський палац від забудови площі Шевченка і Жовтневого (колишнього Соборного) провулка. Палац, колись виходив на площу головним фасадом, з кінця 1940-х рр. опинився всередині паркової території. 
-                     </span>
+                </span>
             </p>
         </div>
        
+        <!-- ________________Slider_Bar____________ -->
+
         <div class="slider _container">
-            <div class="btnLeft fa-solid fa-angle-left"></div>
-            <div class="btnRight fa-solid fa-angle-right"></div>
-            <div class="carusel">
+
+            <div class="slides">
                 <div class="slide">
-                    <img src="img/loc_1_page/01.jpg" alt="#">
+                    <img src="img/loc_1_page/03.jpg" alt="#" class="image">
+                    <P>Колонада входу до парку імені Т.Г. Шевченка. Головний фасад із площі. Фото 1950-х рр.</P>
                 </div>
+
                 <div class="slide">
-                    <img src="img/loc_1_page/02.jpg" alt="#">
+                    <img src="img/loc_1_page/02.jpg" alt="#" class="image">
+                    <P>Колонада входу до парку імені Т.Г. Шевченка. Головний фасад із площі. Фото 1950-х рр.</P>
                 </div>
+
                 <div class="slide">
-                    <img src="img/loc_1_page/03.JPG" alt="#">
+                    <img src="img/loc_1_page/01.jpg" alt="#" class="image">
+                    <P>Колонада входу до парку імені Т.Г. Шевченка. Головний фасад із площі. Фото 1950-х рр.</P>
                 </div>
+
             </div>
 
-            
-            
-            </div>
+            <div onclick="goLeft()" class="btnLeft fas fa-angle-left"></div>
+            <div onclick="goRight()" class="btnRight fas fa-angle-right"></div>
+ 
         </div>
 
 
     </main>
+
+    <!-- _____________Footer___________ -->
 
     <footer class="footer">
         <div class="footer-content  _container">
@@ -200,6 +211,8 @@
     <!-- __________Main_JS___________ -->
     <script src="main.js"></script>
     
+    
+
     <!-- _____________Vanilla_JS_____________ -->
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
@@ -210,6 +223,7 @@
         "max-glare": 0.3,
 	});
     </script>
+    
 
 
 
