@@ -185,7 +185,7 @@ a {
     position: relative;
     height: 500px;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.041)), url(img/loc_1_page/01.jpg) no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.041)), url(img/Loc_2_page/2.jpg) no-repeat center;
     background-size: cover;
     background-position: center center;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
@@ -432,7 +432,7 @@ a {
 
 .slides {
     display: flex;
-    width: 3600px;
+    width: 9600px;
 }
 
 .slide {
