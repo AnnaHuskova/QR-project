@@ -539,16 +539,117 @@ iframe {
     position: relative;
     height: auto;
     margin-top: 30px;
-    background: rgba(49, 88, 85, 0.7);
+    background: rgba(49, 88, 85, 1);
+    text-decoration: none;
     
 }
 
 .footer-content {
-    height: auto;
     display: flex;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 360px;
+
+}
+
+.organisations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-tex {
+    color: #fff;
+    font-size: 21px;
+
+}
+
+.department, .park {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     
 }
+
+.dnipro_logo, .park_logo {
+    width: auto;
+    height: 42px;
+    padding: 0 12px 0 0;
+    text-decoration: none;
+
+}
+
+.footer-bottom {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #182b28;
+    width: 100%;
+    height: 42px;
+    
+}
+
+.footer-bottom > p {
+    color: #fff;
+    font-size: 16px;
+    font-style:inherit;
+    
+}
+
+.developer {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.developer:hover {
+    color: #a0df16;
+
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.border {
+    width: 240px;
+    height: 3px;
+    background: #a0df16;
+    margin-top: 24px;
+}
+ .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 21px;
+    margin-top: 21px;
+
+ }
+
+ ._space {
+    margin-top: 12px;
+ }
+
+
+.fa-facebook, .fa-instagram, .fa-building {
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-building:hover {
+    font-size: 42px;
+    color: #a0df16;
+
+}
+
 
 @media (max-width: 1200px) {
 
