@@ -513,6 +513,16 @@ a {
     font-size: 21px;
 }
 
+/* ____________leafLet_Map_____________ */
+
+.leaflet_map {
+    position: relative;
+    margin-top: 42px;
+    z-index: 1;
+}
+
+
+
 
 /* ____________Google_Map_____________ */
 
@@ -620,7 +630,7 @@ iframe {
 .border {
     width: 240px;
     height: 3px;
-    background: #a0df16;
+    background: #9fdf16c4;
     margin-top: 24px;
 }
  .social {
@@ -629,6 +639,7 @@ iframe {
     justify-content: space-between;
     gap: 21px;
     margin-top: 21px;
+    
 
  }
 
